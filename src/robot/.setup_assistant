@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: IRB1100_xistera
+    relative_path: urdf/IRB1100_xistera.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/IRB1100_xistera.srdf
+  CONFIG:
+    author_name: dav
+    author_email: dav@dav.at
+    generated_timestamp: 1746438380

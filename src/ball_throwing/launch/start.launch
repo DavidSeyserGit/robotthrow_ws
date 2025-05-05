@@ -1,0 +1,7 @@
+<launch>
+  <!-- Load the URDF to the parameter server -->
+  <param name="ball_description" command="$(find xacro)/xacro '$(find ball_throwing)/urdf/ball/ball.urdf'" />
+
+  <!-- Spawn the ball into Gazebo -->
+  <node name="spawn_ball" pkg="ball_throwing" type="$(find ball_throwing)/scripts/ball_throw.py" respawn="false" output="screen" />
+</launch>
