@@ -1,2 +1,0 @@
-IRB1100_xistera:ball_throwing:robot
--DCATKIN_DEVEL_PREFIX=/mnt/e/robotthrow_ws/devel -DCMAKE_INSTALL_PREFIX=/mnt/e/robotthrow_ws/install -G Unix Makefiles
