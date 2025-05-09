@@ -1,7 +1,8 @@
 <launch>
-  <!-- Load the URDF to the parameter server -->
-  <param name="ball_description" command="$(find xacro)/xacro '$(find ball_throwing)/urdf/ball/ball.urdf'" />
+  <!-- Start Gazebo (or assume it's already running) -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
 
-  <!-- Spawn the ball into Gazebo -->
-  <node name="spawn_ball" pkg="ball_throwing" type="$(find ball_throwing)/scripts/ball_throw.py" respawn="false" output="screen" />
+  <!-- Load the robot description from a xacro file -->
+  <param name="ball_description" command="$(find xacro)/xacro $(find ball_throwing)/urdf/ball/ball.urdf" />
+
 </launch>

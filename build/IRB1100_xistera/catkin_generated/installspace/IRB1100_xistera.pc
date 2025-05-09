@@ -1,0 +1,8 @@
+prefix=/home/david/robotthrow_ws/install
+
+Name: IRB1100_xistera
+Description: Description of IRB1100_xistera
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
