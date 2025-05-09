@@ -1,8 +1,0 @@
-prefix=/home/david/robotthrow_ws/devel
-
-Name: robot
-Description: Description of robot
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
